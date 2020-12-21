@@ -2,7 +2,7 @@
 
 ```
 ➜  ~ export   KUBECONFIG=~/.kube/config
-➜  ~ chmod kubectl-run_shell_all_node kubectl-run_shell_single_node
+➜  ~ chmod +x kubectl-run_shell_all_node kubectl-run_shell_single_node
 ➜  ~ cp kubectl-run_shell_all_node kubectl-run_shell_single_node /usr/local/bin/
 
 ➜  ~ kubectl plugin list
