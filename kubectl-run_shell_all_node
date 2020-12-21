@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if [[ $# -eq 0 ]] ; then
+    echo 'You have to speficy at least command'
+	echo 'Usage: kubectl kubectl-run_shell_all_node commands '
+    exit 1
+fi
+
+for i in $(kubectl get nodes -o go-template='{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}' | sort -k 2 -k 1 -t: | tr '\n' ' '); do
+	kubectl run_shell_single_node  $i  --  $* 
+done

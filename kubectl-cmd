@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+for i in $(kubectl get pods -n $1 --no-headers | awk '{print $1}' | grep $2); do
+	echo -e "\n$i\n"
+	kubectl exec -n $1 $i $3 2>/dev/null;
+done
