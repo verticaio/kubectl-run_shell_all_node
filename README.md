@@ -54,7 +54,7 @@ worker01
 logout
 
 Execute command in single k8s node as argument
-➜  ~ kubeclt-run_shell_all_node git:(main) kubectl run_shell_single_node worker01 -- hostname
+➜  ~ kubectl run_shell_single_node worker01 -- hostname
 executing command  on "worker01"
 worker01
 
