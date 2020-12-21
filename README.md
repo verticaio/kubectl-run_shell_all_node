@@ -42,6 +42,22 @@ executing command  on "worker02"
 Ncat: Version 7.50 ( https://nmap.org/ncat )
 Ncat: Connected to 127.0.0.1:22.
 Ncat: 0 bytes sent, 0 bytes received in 0.02 seconds.
+
+Execute command in single k8s node
+➜ ~ kubectl run_shell_single_node worker01
+executing command  on "worker01"
+If you don't see a command prompt, try pressing enter.
+[root@worker01 /]# 
+[root@worker01 /]# hostname
+worker01
+[root@worker01 /]# exit
+logout
+
+Execute command in single k8s node as argument
+➜  ~ kubeclt-run_shell_all_node git:(main) kubectl run_shell_single_node worker01 -- hostname
+executing command  on "worker01"
+worker01
+
 ```
 
 ### Resources
