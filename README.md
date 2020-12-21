@@ -1,0 +1,1 @@
+# kubeclt-run_shell_all_node
