@@ -1,4 +1,4 @@
-# kubeclt-run_shell_all_node, run shell commands kubernetes nodes over kubectl plugin options
+# kubeclt-run_shell_all_node, run shell commands all kubernetes nodes as kubectl plugin
 
 ```
 ➜  ~ export   KUBECONFIG=~/.kube/config
